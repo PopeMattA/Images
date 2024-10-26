@@ -2,7 +2,7 @@ import cv2 as cv
 import time
 
 cap = cv.VideoCapture(0)
-image_dir_path = "N_images"
+image_dir_path = "new_R_images_oct26"
 n = 0
 
 while True:
@@ -20,7 +20,7 @@ while True:
 		cv.imwrite(f"{image_dir_path}/image{n}.png", frame)
 		print(f"Saved image number {n}")
 		n += 1  # Increment the image counter
-		time.sleep(0.1)
+		time.sleep(0.5)
 	else:
 		print("Reached the limit of 500 images.")
 		break  # Exit the loop after saving 30 images

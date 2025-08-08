@@ -1,0 +1,13 @@
+material borderedtag1
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture bordered_tag1.png
+      }
+    }
+  }
+}

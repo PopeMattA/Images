@@ -1,0 +1,14 @@
+from launch import LaunchDescription
+from launch_ros.actions import Node
+
+def generate_launch_description():
+    return LaunchDescription([
+        Node(
+            package='ardupilot_simple_flight',
+            executable='simple_flight_node',
+            name='simple_flight_node',
+            output='screen',
+            parameters=[],
+            remappings=[]
+        )
+    ])
